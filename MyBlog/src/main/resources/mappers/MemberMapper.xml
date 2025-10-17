@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.thejoeun.myblog.mapper.MemberMapper">
+    <select id="getMemberByEmail" resultType="Member">
+        SELECT *
+        FROM member
+        WHERE Member_email = #{memberEmail}
+    </select>
+
+    <select id="getMemberById" resultType="Member">
+        SELECT *
+        FROM member
+        WHERE Member_id = #{memberId}
+    </select>
+
+    <select id="selectMemberList" resultType="Member">
+        SELECT *
+        FROM member
+        ORDER BY MEMBER_ID
+    </select>
+
+    <!-- post는 parameterType 작성 필수 -->
+    <insert id="saveMember" parameterType="Member">
+        INSERT INTO member (member_name, member_email, member_password, member_role)
+        VALUES (#{memberName}, #{memberEmail}, #{memberPassword}, #{memberRole})
+    </insert>
+
+    <!--
+    $ : JSP Thymeleaf에서 Java 변수명으로 쓰는 표기
+    # : MyBatis에서 Java 변수명으로 쓰는 표기
+
+    resultType  : 자동 매핑. model에 해당하는 클래스 파일 문서를 찾아 config 형식에 맞게 매핑한다.
+    resultMap   : 수동 매핑. 복잡한 조회 또는 JOIN 사용할 때 활용한다.
+                  둘 다 사용하면 수동으로 매핑하고, 자동으로 매핑하겠다는 뜻으로, 코드가 동작 안 할 수도 있다.
+                  -> 둘 중 하나만 사용한다.
+    -->
+</mapper>
