@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.thejoeun.theMall.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.thejoeun.theMall.model.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="role" column="role"/>
+    </resultMap>
+
+    <select id="getAllUser" resultMap="userResultMap">
+        SELECT id, name, email, role
+        FROM user
+        ORDER BY id DESC
+    </select>
+
+    <insert id="insertUser" parameterType="com.thejoeun.theMall.model.User">
+        INSERT INTO user(name, email, role)
+        VALUES (#{name}, #{email}, #{role})
+    </insert>
+
+</mapper>
