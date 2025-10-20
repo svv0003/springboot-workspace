@@ -1,4 +1,4 @@
-package edu.thejoeun.goodscommunity.member.dto;
+package edu.thejoeun.goodscommunity.member.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,13 +1,13 @@
 package edu.thejoeun.goodscommunity.common.util;
 
-import edu.thejoeun.goodscommunity.member.dto.Member;
+import edu.thejoeun.goodscommunity.member.model.dto.Member;
 import jakarta.servlet.http.HttpSession;
 
 public class SessionUtil {
 
     private static final String LOGIN_USER = "loginUser";
 
-    private static void setLoginUser (HttpSession session, Member member) {
+    public static void setLoginUser (HttpSession session, Member member) {
         session.setAttribute (LOGIN_USER, member);
         session.setMaxInactiveInterval(30*60);
     }
