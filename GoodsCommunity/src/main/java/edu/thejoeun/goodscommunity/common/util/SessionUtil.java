@@ -1,7 +1,6 @@
 package edu.thejoeun.goodscommunity.common.util;
 
 import edu.thejoeun.goodscommunity.member.model.dto.Member;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 public class SessionUtil {
