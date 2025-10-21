@@ -45,21 +45,17 @@ public class DBConfig {
     }
 
     @Bean
-    public SqlSessionFactory sqlSessionFactoryBean(DataSource dataSrource) throws Exception {
-
+    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-
-        sqlSessionFactoryBean.setDataSource(dataSrource);
+        sqlSessionFactoryBean.setDataSource(dataSource);
         sqlSessionFactoryBean.setMapperLocations(
-                applicationContext.getResources("classpath*:mappers/**/*.xml")
+                applicationContext.getResources("classpath:/mappers/**/*.xml")
         );
-
         sqlSessionFactoryBean.setTypeAliasesPackage("edu.thejoeun.goodscommunity");
 
         sqlSessionFactoryBean.setConfigLocation(
-                applicationContext.getResource("classpath:mybatis-config.xml")
+                applicationContext.getResource("classpath:/mybatis-config.xml")
         );
-
         return sqlSessionFactoryBean.getObject();
     }
 
@@ -67,7 +63,6 @@ public class DBConfig {
     public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
-
     @Bean
     public DataSourceTransactionManager transactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);

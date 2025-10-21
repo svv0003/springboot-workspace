@@ -1,1 +1,2 @@
 <!-- Spring Boot 관련하여 기본 로그 파일 세팅하는 공간 -->
+<!-- <configuration scan="true" scanPeriod="60 seconds"></configuration> -->

@@ -6,48 +6,45 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-@Service
-public class MemberServiceImpl implements MemberService {
 
+@Service
+public class MemberServiceImpl  implements MemberService {
     @Autowired
     private MemberMapper memberMapper;
-
+    /**
+     * Autowired 형태로 변경
+     * config에서 관리할 것
+     */
     BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-    // 추후 config에서 BCrypto 관리할 것이며, @Autowired 사용할 것이다.
+
 
     /**
-     * MemberService에 작성한 기능명칭 (매개변수 자료형 개수)가
-     * MemberServiceImpl과 일치하지 않으면 @Override 된 상태가 아니다.
-     * 명칭만 똑깥이 썼을 뿐
-     *
-     * @param memberEmail    HTML -> JS -> controller api/endpoint로 가져온 이메일
-     * @param memberPassword HTML -> JS -> controller api/endpoint로 가져온 비밀번호
-     *                       session              회원 정보가 DB에서 조회되면 session 부여한다.
-     *                       model                회원 정보가 조회되면 model 세팅한다.
+     * MemberService 에 작성한 기능명칭(매개변수 자료형 개수) 가 <br/>
+     * MemberServiceImpl 과 일치하지 않으면 @Override 된 상태가 아님 <br/>
+     * 명칭만 똑같이 썼을 뿐 <br/>
+     * @param memberEmail    html -> js -> controller api/endpoint 로 가져온 이메일
+     * @param memberPassword html -> js -> controller api/endpoint 로 가져온 비밀번호
      * @return
      */
     @Override
     public Member login(String memberEmail, String memberPassword) {
-
         Member member = memberMapper.getMemberByEmail(memberEmail);
-
-        // DB에서 email로 조회되는 것이 없는게 사실이라면 NULL
-        if (member == null) {
+        // email 로 db 에서 조회되는 데이터가 0개 인게 사실이라면
+        if(member == null) {
             return null;
         }
 
-        // 비밀번호 일치하지 않은게 사실이라면 NULL
-        if (!bCryptPasswordEncoder.matches(member.getMemberPassword(), member.getMemberPassword())) {
+        // 비밀번호 일치하지 않은게 사실이라면 null
+        // bc 크립토의 경우 알고리즘
+        // 클라이언트가 작성한 비밀번호 -> bcrypt 형태의 알고리즘으로 변환
+        // DB에서 bcrypt 형태로 변환된 비밀번호를 가져오는 위치
+        //                                클라이언트가 작성한 비밀번호, db에 저장된 비밀번호
+        if(!bCryptPasswordEncoder.matches(              memberPassword, member.getMemberPassword())) {
             return null;
         }
 
-        // 이메일이 존재하며, 비밀번호까지 일치한다면
-        // 비밀번호를 제거한 상태로 회원정보를 controller에 전달한다.
-        member.setMemberPassword(null);
-
-        // 멤버에 대한 모든 정보를 controller에 전달한다.
-        return member;
+        // 이메일 존재하며, 비밀번호도 일치한다면
+        member.setMemberPassword(null); // 비밀번호 제거한 상태로 유저정보를 controller 전달
+        return member; // 멤버에 대한 모든 정보를 컨트롤러에 전달
     }
-
 }
-
