@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 등록</title>
+    <link rel="stylesheet" href="/css/goodsAdd.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>The Mall</h1>
+        <p class="subtitle">상품 등록</p>
+    </header>
+
+    <div class="nav-buttons">
+        <button class="btn-list" onclick="goToList()">📋 상품 목록 보기</button>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <div class="form-container">
+        <form id="goodsForm" onsubmit="submitGoods(event)">
+            <div class="form-group">
+                <label>카테고리<span class="required">*</span></label>
+                <label><input type="radio" name="category" value="Electronics">전자제품</label>
+                <label><input type="radio" name="category" value="Household Goods">생활용품</label>
+                <label><input type="radio" name="category" value="Fashion">패션</label>
+                <label><input type="radio" name="category" value="Accessories">잡화</label>
+                <label><input type="radio" name="category" value="Others">기타</label>
+            </div>
+            <div class="form-group">
+                <label for="name">
+                    상품명<span class="required">*</span>
+                </label>
+                <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="상품명을 입력하세요"
+                        required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="price">
+                    가격<span class="required">*</span>
+                </label>
+                <input
+                        type="number"
+                        id="price"
+                        name="price"
+                        placeholder="가격을 입력하세요"
+                        min="0"
+                        required
+                >
+                <div class="input-hint">숫자만 입력 가능합니다 (원 단위)</div>
+            </div>
+
+            <div class="form-group">
+                <label for="stock">
+                    재고<span class="required">*</span>
+                </label>
+                <input
+                        type="number"
+                        id="stock"
+                        name="stock"
+                        placeholder="재고 수량을 입력하세요"
+                        min="0"
+                        value="0"
+                        required
+                >
+                <div class="input-hint">초기 재고 수량을 입력하세요</div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">
+                    등록하기
+                </button>
+                <button type="reset" class="btn-reset">
+                    초기화
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/goodsAdd.js"></script>
+</body>
+</html>

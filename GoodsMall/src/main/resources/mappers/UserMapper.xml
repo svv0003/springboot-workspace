@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="edu.the.joeun.mapper.UserMapper">
+
+    <!-- config 배우면 아래 resultMap은 작성하지 않아도 된다 -->
+    <resultMap id="userResultMap" type="edu.the.joeun.model.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="password" column="password"/>
+        <result property="role" column="role"/>
+        <result property="created_at" column="created_at"/>
+        <result property="updated_at" column="updated_at"/>
+    </resultMap>
+
+    <select id="getAllUser" resultMap="userResultMap">
+        SELECT *
+        FROM user
+        ORDER BY id ASC
+    </select>
+
+    <!-- parameterType="int" -->
+    <select id="getUserById" parameterType="int" resultMap="userResultMap">
+        SELECT *
+        FROM user
+        WHERE = #{id}
+    </select>
+
+    <!-- parameterType="edu.the.joeun.model.User" -->
+    <insert id="insertUser" parameterType="edu.the.joeun.model.User">
+        INSERT INTO user(name, email, password, role)
+        VALUES (#{name}, #{email}, #{password}, #{role})
+        <!-- id, craeted_at, updated_at은 SQL에서 자동 삽입하므로 사용자가 작성한 데이터를 기입하지 않는다. -->
+        <!-- role은 기본값 적용되기 때문에 작성하지 않아도 된다. -->
+    </insert>
+
+    <!-- 이메일로 사용자 조회 (로그인 용도) -->
+    <select id="getUserByEmail" parameterType="String" resultMap="userResultMap">
+        SELECT *
+        FROM USER
+        WHERE email = #{email}
+    </select>
+</mapper>
