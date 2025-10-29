@@ -1,8 +1,6 @@
 package edu.thejoeun.goodscommunity.common.scheduling.schedulingService;
 
-
 import edu.thejoeun.goodscommunity.board.model.dto.Board;
-
 import java.util.List;
 
 public interface SchedulingService {
@@ -19,3 +17,4 @@ public interface SchedulingService {
      */
     List<Board> getPopularBoards();
 }
+

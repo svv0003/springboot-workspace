@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -17,10 +16,7 @@ import java.time.format.DateTimeFormatter;
  */
 @Slf4j
 @Component
-@RequiredArgsConstructor
-/*
-이제 Autowired 안 쓰고 @RequiredArgsConstructor 사용하기.
- */
+@RequiredArgsConstructor        // 이제 Autowired 안 쓰고 @RequiredArgsConstructor 사용하기.
 public class BoardScheduling {
 
     // 오버라이드 되어 사용된 기능을 사용하기 때문에 Service 또는 ServiceImpl 가져와
@@ -35,10 +31,12 @@ public class BoardScheduling {
     postMapping이나 deleteMapping을 따로 api 설정해서 연결하지 않아도 된다.
     소비자에게 보여주는 것이 아니라 우리 회사의 페이지를 위해 개발자가 자동 업데이트 처리를 진행한 것이기 때문이다.
      */
-    // 실제 배포용 스케줄링
-    // @Scheduled(cron = "0 59 23 * * *")
-    // 개발자 확인용 스케줄링
-    // 인기글을 23시 59분까지 기다리지 않고, 인기글 업데이트가 무사히 잘 되는지 개발자가 확인하는 방법 1탄
+    /*
+    실제 배포용 스케줄링
+    @Scheduled(cron = "0 59 23 * * *")
+    개발자 확인용 스케줄링
+    인기글을 23시 59분까지 기다리지 않고, 인기글 업데이트가 무사히 잘 되는지 개발자가 확인하는 방법 1탄
+     */
     @Scheduled(cron = "0/10 * * * * *")
     public void updatePopularBoards() {
 

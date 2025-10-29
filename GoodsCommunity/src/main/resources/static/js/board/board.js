@@ -6,16 +6,13 @@ async  function fetchBoardData(){
     const table = document.getElementById("boardTable");
     const tbody = document.getElementById("boardBody");
 
-
     loading.style.display = "block";
     error.style.display = "none";
     table.style.display = "none";
     tbody.innerHTML = "";
 
-
     const res = await fetch(API_BASE_URL + "/board/all")
 
-    // ok = 200 200이 아닌게 맞을 때
     if(!res.ok) {
         throw new Error("서버 응답 오류 : " + res.status);
     }
@@ -36,15 +33,11 @@ async  function fetchBoardData(){
                 <td></td>
                 <td onclick="openModal(${b.id})">미리보기</td>
                 <td onclick="gotoDetail(${b.id})">상세보기</td>
-                
                 `;
                 tbody.appendChild(row);
             });
     }
-
     table.style.display = "table";
-
-
 }
 
 // 게시글 상세보기 를 호출하는 기능
@@ -94,7 +87,6 @@ async function openModal(id) {
     const modalTitle = document.getElementById("modalTitle");
     const modalInfo = document.getElementById("modalInfo");
     const modalContent = document.getElementById("modalContent");
-
 
     modal.style.display ="flex";
 

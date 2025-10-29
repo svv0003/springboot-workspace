@@ -6,9 +6,7 @@ import edu.thejoeun.goodscommunity.common.scheduling.schedulingService.Schedulin
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Slf4j                           로그 기록 가능하다.

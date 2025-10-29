@@ -22,6 +22,7 @@
             id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW()
         FROM board
         ORDER BY view_count DESC
+        LIMIT 10
     </insert>
 
     <!-- 인기 게시글 목록 조회 -->
