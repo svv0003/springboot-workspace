@@ -14,18 +14,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 // @SessionAttributes({"loginUser"})
 // SessionUtil, SessionAttributes 동시에 회원 정보가 저장되기 때문에 사용 안 한다.
-@Controller
+@RestController
 public class MemberController {
 
     @Autowired
     MemberServiceImpl memberService;
-
-    @GetMapping("/")
-    public String pageMain(){
-        // return "main";
-        return "index";
-    }
-
 
     // 쿠키 설정할 때 아이디 저장 안 되면 가정 먼저하는 작업이다.
     // @CookieView와 Model은 필요 없다.
