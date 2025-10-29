@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 목록 - The Mall</title>
+    <link rel="stylesheet" href="/css/userList.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>The Mall</h1>
+        <p class="subtitle">사용자 목록</p>
+    </header>
+
+    <div class="controls">
+        <button onclick="loadUsers()">새로고침</button>
+        <button onclick="goToRegister()">사용자 등록</button>
+    </div>
+
+    <div id="content">
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>사용자 정보를 불러오는 중...</p>
+        </div>
+    </div>
+</div>
+
+<script src="/js/userList.js"></script>
+</body>
+</html>

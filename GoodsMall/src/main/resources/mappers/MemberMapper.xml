@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper = 매핑. 모든 SQL을 감싸서 (매핑) Mapper.java 파일로 SQL문을 전달하겠다는 형태 -->
+<mapper namespace="edu.the.joeun.mapper.MemberMapper">
+
+    <!--
+    SQL 컬럼명과 Java 컬럼명이 서로 일치하는 쌍을 작성한다.
+    resultMap id 값으로 일치 결과를 select 또는 insert update delete에서 참조하여 사용할 수 있다.
+    DBConfig를 설정하게 되면 resultMap은 작성하지 않을 예정이다.
+    -->
+    <resultMap id="userResultMap" type="edu.the.joeun.model.Member">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="password" column="password"/>
+        <result property="role" column="role"/>
+        <result property="created_at" column="created_at"/>
+        <result property="updated_at" column="updated_at"/>
+        <!--
+        SQL에서는 컬럼을 _형태로 단어 구분하며,
+        Java에서는 변수명을 카멜표기법으로 단어 구분한다.
+
+        <result property="createdAt" column="created_at"/>
+        <result property="updatedAt" column="updated_at"/>
+
+        Java 언어의 문법적 특성상 관습으로,
+        Java는 여러 단어를 이어서 작성할 때 첫 글자는 소문자로 작성하고,
+        그 이후 각 단어의 첫 글자를 대문자로 작성하는 방식을 주로 사용한다.
+
+        SQL 언어의 문법적 특성상 관습으로,
+        대소문자 구분이 없어서 카멜표기법 형태가 의미 없다.
+        mamber = meMBer = MEMBER 모두 같은 테이블이나 컬럼을 바라보는 단어로 인식한다.
+        -->
+    </resultMap>
+
+    <select id="getAllMember" resultMap="userResultMap">
+        SELECT *
+        FROM member
+        ORDER BY id ASC
+    </select>
+
+    <select id="getMemberById" parameterType="int" resultMap="userResultMap">
+        SELECT *
+        FROM member
+        WHERE = #{id}
+    </select>
+
+    <insert id="insertMember" parameterType="edu.the.joeun.model.Member">
+        INSERT INTO member (name, email, password, role)
+        VALUES (#{name}, #{email}, #{password}, #{role})
+    </insert>
+
+</mapper>

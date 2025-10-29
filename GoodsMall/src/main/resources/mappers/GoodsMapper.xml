@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper 경로 -->
+<mapper namespace="edu.the.joeun.mapper.GoodsMapper">
+
+    <!-- resultMap 정의 -->
+    <!--
+    resultMap이란 Key 속성 형태로 연결하겠다는 것을 설정하는 것.
+    resultMap id를 설정해서 아래는 아이디 명칭으로 간략하게 사용할 것이다.
+    상황에 따라 resultMap은 여러 개일 수 있다.
+    -->
+    <resultMap id="goodsMap" type="edu.the.joeun.model.Goods">
+        <!-- PK 연결 (Java 모델명과 컬럼명 연결) -->
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="category" column="category"/>
+        <result property="price" column="price"/>
+        <result property="stock" column="stock"/>
+    </resultMap>
+
+    <!-- 모든 조회 결과 -->
+    <!-- resultMap id를 아래 입력하기 -->
+    <select id="getAllGoods" resultMap="goodsMap">
+        SELECT *
+        FROM Goods
+        ORDER BY id ASC
+    </select>
+
+    <!-- id 조회 결과 -->
+    <select id="getGoodsById" parameterType="int" resultMap="goodsMap">
+        SELECT *
+        FROM Goods
+        WHERE = #{id}   <!-- Java에서 조회하게 될 데이터가 들어있는 변수명 설정하기 -->
+    </select>
+
+    <!-- 데이터 추가 -->
+    <insert id="insertGoods" parameterType="edu.the.joeun.model.Goods">
+        INSERT INTO Goods (name, price, stock, category)
+        VALUES (#{name}, #{price}, #{stock}, #{category})
+    </insert>
+
+    <!--
+    MyBatis에서 insert sql을 정의하는 태그
+    id="메서드명"                      => Java Mapper 인터페이스에서 이 명칭으로 호출한다.
+    parameterType="자바클래스타입"     => Java에서 전달할 객체 타입 (변수명 타입)
+                                          SQL 컬럼명은 아무런 특수 기호 없이 컬럼명 작성한다.
+    #{자바에서 가져온 변수명1}         => Java 변수명은 #{} 내부에 작성한다.
+
+    <insert id="메서드명" parameterType="자바클래스타입">
+        INSERT INTO 테이블명 (컬럼1, 컬럼2, 컬럼3)
+        VALUES (#{자바에서 가져온 변수명1}, #{자바에서 가져온 변수명2}, #{자바에서 가져온 변수명3})
+    </insert>
+    -->
+
+</mapper>

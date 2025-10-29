@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 등록 - The Mall</title>
+    <link rel="stylesheet" href="/css/userAdd.css" />
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>The Mall</h1>
+        <p class="subtitle">사용자 등록</p>
+    </header>
+
+    <div class="nav-buttons">
+        <button class="btn-list" onclick="goToList()">📋 사용자 목록 보기</button>
+    </div>
+
+    <div id="alertBox"></div>
+
+    <div class="form-container">
+        <form id="userForm" onsubmit="submitUser(event)">
+            <div class="form-group">
+                <label for="name">이름<span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required />
+            </div>
+            <div class="form-group">
+                <label for="email">이메일<span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="이메일 주소를 입력하세요" required />
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호<span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" required />
+            </div>
+            <div class="form-group">
+                <!--
+                <label for="role">사용자권한<span class="required">*</span></label>
+                <select id="role" name="role" required>
+                    <option value="">선택하세요</option>
+                    <option value="USER">일반 사용자</option>
+                    <option value="ADMIN">관리자</option>
+                </select>
+                -->
+                <!--
+                radio 형식으로 바꾸기
+                radio 버튼은 name으로 같은 그룹에서 선택함을 설정한다.
+                -->
+                <label>사용자권한<span class="required">*</span></label>
+                <label><input type="radio" name="role" value="USER" required>일반 사용자</label>
+                <label><input type="radio" name="role" value="ADMIN" required>관리자</label>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn-submit">등록하기</button>
+                <button type="reset" class="btn-reset">초기화</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/userAdd.js"></script>
+</body>
+</html>
