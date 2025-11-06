@@ -37,7 +37,7 @@ public class BoardScheduling {
     개발자 확인용 스케줄링
     인기글을 23시 59분까지 기다리지 않고, 인기글 업데이트가 무사히 잘 되는지 개발자가 확인하는 방법 1탄
      */
-    @Scheduled(cron = "0/10 * * * * *")
+    @Scheduled(cron = "0 * * * * *")
     public void updatePopularBoards() {
 
         String startTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));

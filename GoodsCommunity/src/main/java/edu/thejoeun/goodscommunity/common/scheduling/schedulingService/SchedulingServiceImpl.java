@@ -28,6 +28,6 @@ public class SchedulingServiceImpl implements SchedulingService {
 
     @Override
     public List<Board> getPopularBoards() {
-        return schedulingMapper.selectAllBoards();
+        return schedulingMapper.selectPopularBoards();
     }
 }

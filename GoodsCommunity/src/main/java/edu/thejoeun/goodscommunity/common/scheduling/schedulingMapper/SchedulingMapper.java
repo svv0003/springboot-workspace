@@ -27,6 +27,6 @@ public interface SchedulingMapper {
     int insertPopularBoards();
 
     // 인기글 목록 조회
-    List<Board> selectAllBoards();
+    List<Board> selectPopularBoards();
 
 }

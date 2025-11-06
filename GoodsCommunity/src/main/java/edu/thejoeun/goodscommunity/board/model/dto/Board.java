@@ -32,3 +32,5 @@ public class Board {
     private String popularUpdateAt; // 인기글 업데이트 시간
 
 }
+
+
