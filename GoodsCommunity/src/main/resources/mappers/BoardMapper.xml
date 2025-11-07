@@ -24,10 +24,14 @@
     javaType      List (컬렉션)의 타입을 지정한다.
     ofType        List (컬렉션)의 제네릭 (타입 제한)을 지정한다.
     -->
+    <!--
+    ORDER BY create_at DESC에서 생성일이 동일한 경우, id 오름차순으로 정렬한다.
+    정렬 1순위 : 생성일, 2순위 : id
+    -->
     <select id="getAllBoard" resultType="Board">
         SELECT *
         FROM board
-        ORDER BY created_at DESC
+        ORDER BY created_at DESC, id DESC
     </select>
 
     <!--
@@ -45,6 +49,7 @@
         SELECT *
         FROM board
         WHERE id = #{id}
+        ORDER BY id ASC
     </select>
 
     <!--
@@ -58,5 +63,23 @@
     최신 게시물 n개 조회
     인기 게시물 조회 (조회수 높은 순)
     -->
+    <!--
+    insert, update -> parameterType
+    select         -> resultType
+    -->
+    <insert id="insertBoard" parameterType="board">
+        INSERT INTO board (title, content, writer)
+        VALUES (#{title}, #{content}, #{writer})
+    </insert>
+
+    <update id="updateBoard">
+
+    </update>
+
+    <update id="updateViewCount" parameterType="int">
+        UPDATE board
+        SET view_count = view_count + 1
+        WHERE id = #{id}
+    </update>
 
 </mapper>

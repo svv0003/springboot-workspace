@@ -28,12 +28,27 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public Board getBoardById(int id) {
-        Board b = boardMapper.getBoardById(id);
-        return b != null ? b : null;
+        /*
+        게시물 상세보기 선택 시 해당 게시물의 조회수 증가한다.
+         */
+        boardMapper.updateViewCount(id);
+
         /*
         게시물 상세 조회를 위해 id를 입력하고,
         입력한 id에 해당하는 게시물이 존재할 경우에는 조회된 데이터를 전달한다.
         존재하지 않을 경우에는 null을 전달한다.
          */
+        Board b = boardMapper.getBoardById(id);
+        return b != null ? b : null;
+    }
+
+    @Override
+    public void createBoard(Board board) {
+        boardMapper.insertBoard(board);
+    }
+
+    @Override
+    public void updateBoard(Board board) {
+
     }
 }

@@ -5,6 +5,7 @@ import edu.thejoeun.goodscommunity.board.model.service.BoardService;
 import edu.thejoeun.goodscommunity.common.scheduling.schedulingService.SchedulingService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.util.PerformanceSensitive;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -52,8 +53,16 @@ public class BoardController {
         int result = schedulingService.updatePopularBoards();
         return result;
     }
-
      */
+
+    /*
+    api endpoint = /api/board
+    맨 위에 작성한 requestMapping 해당한다.
+     */
+    @PostMapping
+    public void createBoard(@RequestBody Board board) {
+        boardService.createBoard(board);
+    }
 
 }
 
