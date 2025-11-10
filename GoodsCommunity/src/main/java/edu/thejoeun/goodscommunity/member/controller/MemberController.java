@@ -6,6 +6,7 @@ import edu.thejoeun.goodscommunity.member.model.service.MemberServiceImpl;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,9 +15,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 // @SessionAttributes({"loginUser"})
 // SessionUtil, SessionAttributes 동시에 회원 정보가 저장되기 때문에 사용 안 한다.
-@RestController
+@Slf4j
+@Controller
 public class MemberController {
 
+    /*
     @Autowired
     MemberServiceImpl memberService;
 
@@ -78,7 +81,7 @@ public class MemberController {
         if ("on".equals(saveId)){
          */
         // userIdCookie != null &&
-        if ("on".equals(saveId)){ // saveId라는 것이 html에 존재하지 않기 때문에 null 생성한다.  // 회원 아이디 저장 체그되어 있다면 30일간 회원 아이디를 저장하고, 안 되어 있으면 회원 아이디를 쿠키에 저장하지 않겠다.
+        /*if ("on".equals(saveId)){ // saveId라는 것이 html에 존재하지 않기 때문에 null 생성한다.  // 회원 아이디 저장 체그되어 있다면 30일간 회원 아이디를 저장하고, 안 되어 있으면 회원 아이디를 쿠키에 저장하지 않겠다.
             userIdCookie.setMaxAge(60*60*24*30);    // 60초 * 60분 * 24시간 * 30일을 초 단위로 지정한 것.
         } else {
             userIdCookie.setMaxAge(0);              // 클라이언트 쿠키 삭제하기.
@@ -101,7 +104,9 @@ public class MemberController {
         userIdCookie.setPath("/");
         res.addCookie(userIdCookie);
          */
+    /*
 
         return "redirect:/"; //로그아웃 선택시 모든 쿠키 데이터 지우고 메인으로 돌려보내기
     }
+    */
 }

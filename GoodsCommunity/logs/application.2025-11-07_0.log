@@ -6151,3 +6151,8 @@
 2025-11-07 15:33:00.014  INFO 11540 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
 2025-11-07 15:33:00.014  INFO 11540 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
 2025-11-07 15:33:00.014  INFO 11540 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-07 15:33:00]===
+2025-11-07 15:33:53.108  INFO 11540 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-07 15:33:53.113  INFO 11540 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-07 15:33:53.118  INFO 11540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-07 15:33:53.120  INFO 11540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-07 15:33:53.123  INFO 11540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
