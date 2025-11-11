@@ -33,7 +33,7 @@ public class MemberAPIController {
     // Model과 RedirectAttributes 구분해서 결과 값을 클라이언트에게 전달한다.
     @PostMapping("/login")
     public Map<String, Object> login(
-            @RequestBody Map<String, String> loginData, HttpSession session){
+    @RequestBody Map<String, String> loginData, HttpSession session) {
 
         String memberEmail = loginData.get("memberEmail");
         String memberPassword = loginData.get("memberPassword");
@@ -46,18 +46,19 @@ public class MemberAPIController {
     }
 
     @PostMapping("/logout")
-    public Map<String, Object> logout(HttpSession session){
+    public Map<String, Object> logout(HttpSession session) {
         return memberService.logoutProcess(session);
     }
 
     /**
      * 로그인 상태 확인 API
      * React 앱이 시작될 때 호출된다.
+     *
      * @param session
      * @return 로그인 상태를 반환한다.
      */
     @GetMapping("/check")
-    public Map<String, Object> check(HttpSession session){
+    public Map<String, Object> checkLoginStatus(HttpSession session) {
         return memberService.checkLoginStatus(session);
     }
 }

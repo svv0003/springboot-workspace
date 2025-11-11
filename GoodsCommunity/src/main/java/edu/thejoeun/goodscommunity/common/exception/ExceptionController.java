@@ -20,6 +20,6 @@ public class ExceptionController {
     public  String allExceptionHandler(Exception e, Model model){
         e.printStackTrace();
         model.addAttribute("e",e);
-        return "error/500";
+        return "";
     }
 }
