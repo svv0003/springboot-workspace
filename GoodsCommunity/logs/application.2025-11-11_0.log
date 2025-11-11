@@ -1,0 +1,704 @@
+2025-11-11 09:41:40.878  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:41:40.880 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:41:40.881  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:41:40.957  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-11 09:41:40.958  INFO 8824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-11 09:41:42.581  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:41:42.611  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:41:43.813  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:41:43.831  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:41:43.831  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:41:43.900  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:41:43.901  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2943 ms
+2025-11-11 09:41:44.431  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:41:44.524  INFO 8824 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-11 09:41:44.577  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:41:45.078  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:41:45.122  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:41:45.122  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:41:45.553  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d14f0ae
+2025-11-11 09:41:45.555  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:41:45.619  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:41:45.642  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:41:46.158  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:41:46.165  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:41:46.900  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:41:46.979  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:41:48.300  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:41:48.319  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:41:48.521  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:41:48.545  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 8.534 seconds (process running for 9.858)
+2025-11-11 09:41:49.064  INFO 8824 --- [RMI TCP Connection(3)-192.168.0.142] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-11 09:41:49.064  INFO 8824 --- [RMI TCP Connection(3)-192.168.0.142] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-11 09:41:49.067  INFO 8824 --- [RMI TCP Connection(3)-192.168.0.142] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-11-11 09:42:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:42:00]===
+2025-11-11 09:42:00.021  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:42:00.022  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:42:00.041 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:42:00.061 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:42:00.067 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:42:00.073 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:42:00.074 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:42:00.076 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:42:00.078  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 56ms
+2025-11-11 09:42:00.078  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:42:00.078  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:42:00.078  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:42:00]===
+2025-11-11 09:43:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:43:00]===
+2025-11-11 09:43:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:43:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:43:00.059 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:43:00.059 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:43:00.059 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:43:00.059 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:43:00.059 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:43:00.075 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:43:00.075  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 16ms
+2025-11-11 09:43:00.075  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:43:00.075  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:43:00.075  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:43:00]===
+2025-11-11 09:44:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:44:00]===
+2025-11-11 09:44:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:44:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:44:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:44:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:44:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:44:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:44:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:44:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:44:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 09:44:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:44:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:44:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:44:00]===
+2025-11-11 09:45:00.011  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:45:00]===
+2025-11-11 09:45:00.011  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:45:00.011  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:45:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:45:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:45:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:45:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:45:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:45:00.021 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:45:00.023  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 09:45:00.024  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:45:00.024  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:45:00.024  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:45:00]===
+2025-11-11 09:45:39.387  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-11-11 09:45:39.405  INFO 8824 --- [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:45:40.112  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:45:40.121  INFO 8824 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:45:40.125  INFO 8824 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:45:40.416  INFO 8824 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:45:40.638  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:45:40.645 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:45:40.645  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:45:42.115  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:45:42.139  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:45:42.712  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:45:42.714  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:45:42.714  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:45:42.757  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:45:42.758  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2108 ms
+2025-11-11 09:45:43.296  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:45:43.303  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:45:43.359  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:45:43.362  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:45:43.362  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:45:43.386  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@28695c09
+2025-11-11 09:45:43.387  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:45:43.388  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:45:43.389  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:45:43.418  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:45:43.419  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:45:44.523  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:45:44.583  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:45:45.646  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:45:45.659  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:45:45.703  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:45:45.714  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 5.191 seconds (process running for 247.022)
+2025-11-11 09:45:45.716  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:45:47.447  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-11 09:45:47.450  INFO 8824 --- [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:45:47.455  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:45:47.459  INFO 8824 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:45:47.459  INFO 8824 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:45:47.463  INFO 8824 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:45:47.573  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:45:47.574 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:45:47.574  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:45:48.066  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:45:48.076  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:45:48.261  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:45:48.262  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:45:48.262  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:45:48.333  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:45:48.335  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2025-11-11 09:45:48.537  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:45:48.542  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:45:48.556  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:45:48.558  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:45:48.558  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:45:48.574  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@56c99b8b
+2025-11-11 09:45:48.574  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:45:48.575  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:45:48.576  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:45:48.596  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:45:48.597  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:45:48.885  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:45:48.930  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:45:49.540  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:45:49.547  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:45:49.583  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:45:49.593  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.067 seconds (process running for 250.901)
+2025-11-11 09:45:49.594  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:46:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:46:00]===
+2025-11-11 09:46:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:46:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:46:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:46:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:46:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:46:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:46:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:46:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:46:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 09:46:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:46:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:46:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:46:00]===
+2025-11-11 09:47:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:47:00]===
+2025-11-11 09:47:00.006  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:47:00.006  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:47:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:47:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:47:00.010 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:47:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:47:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:47:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:47:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 13ms
+2025-11-11 09:47:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:47:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:47:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:47:00]===
+2025-11-11 09:47:49.039  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-11 09:47:49.041  INFO 8824 --- [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:47:49.046  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:47:49.048  INFO 8824 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:47:49.049  INFO 8824 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:47:49.052  INFO 8824 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:47:49.156  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:47:49.156 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:47:49.156  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:47:51.250  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:47:51.268  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:47:51.630  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:47:51.631  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:47:51.631  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:47:51.689  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:47:51.689  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2531 ms
+2025-11-11 09:47:51.970  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:47:51.976  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:47:51.994  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:47:51.996  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:47:51.996  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:47:52.011  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@23932adf
+2025-11-11 09:47:52.011  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:47:52.013  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:47:52.013  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:47:52.038  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:47:52.038  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:47:52.463  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:47:52.531  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:47:53.622  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:47:53.629  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:47:53.663  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:47:53.673  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 4.558 seconds (process running for 374.972)
+2025-11-11 09:47:53.675  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:48:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:48:00]===
+2025-11-11 09:48:00.021  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:48:00.022  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:48:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:48:00.024 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:48:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:48:00.036 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:48:00.036 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:48:00.038 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:48:00.058  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 36ms
+2025-11-11 09:48:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:48:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:48:00.059  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:48:00]===
+2025-11-11 09:49:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:49:00]===
+2025-11-11 09:49:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:49:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:49:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:49:00.020 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:49:00.021 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:49:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:49:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:49:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:49:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 09:49:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:49:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:49:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:49:00]===
+2025-11-11 09:50:00.021  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:50:00]===
+2025-11-11 09:50:00.021  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:50:00.022  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:50:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:50:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:50:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:50:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:50:00.028 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:50:00.029 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:50:00.031  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 9ms
+2025-11-11 09:50:00.031  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:50:00.031  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:50:00.031  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:50:00]===
+2025-11-11 09:51:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:51:00]===
+2025-11-11 09:51:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:51:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:51:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:51:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:51:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:51:00.021 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:51:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:51:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:51:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 09:51:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:51:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:51:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:51:00]===
+2025-11-11 09:51:11.224  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-11 09:51:11.226  INFO 8824 --- [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:51:11.229  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:51:11.231  INFO 8824 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:51:11.232  INFO 8824 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:51:11.235  INFO 8824 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:51:11.333  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:51:11.333 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:51:11.333  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:51:12.018  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:51:12.029  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:51:12.347  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:51:12.348  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:51:12.348  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:51:12.381  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:51:12.381  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+2025-11-11 09:51:12.554  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:51:12.561  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:51:12.570  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:51:12.572  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:51:12.572  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:51:12.585  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b8ab39
+2025-11-11 09:51:12.586  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:51:12.587  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:51:12.587  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:51:12.612  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:51:12.612  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:51:12.863  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:51:12.907  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:51:13.580  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:51:13.586  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:51:13.618  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:51:13.627  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.332 seconds (process running for 574.912)
+2025-11-11 09:51:13.628  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:51:42.312  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-11 09:51:42.314  INFO 8824 --- [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:51:42.317  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:51:42.320  INFO 8824 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:51:42.320  INFO 8824 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:51:42.323  INFO 8824 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:51:42.453  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:51:42.453 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:51:42.453  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:51:42.931  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:51:42.940  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:51:43.147  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:51:43.147  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:51:43.147  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:51:43.183  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:51:43.183  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2025-11-11 09:51:43.376  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:51:43.382  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:51:43.392  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:51:43.393  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:51:43.393  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:51:43.406  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@1553ddce
+2025-11-11 09:51:43.407  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:51:43.408  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:51:43.408  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:51:43.428  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:51:43.428  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:51:43.660  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:51:43.709  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:51:44.931  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:51:44.938  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:51:44.969  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:51:44.978  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.579 seconds (process running for 606.261)
+2025-11-11 09:51:44.980  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:52:00.012  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:52:00]===
+2025-11-11 09:52:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:52:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:52:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:52:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:52:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:52:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:52:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:52:00.024 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:52:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 09:52:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:52:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:52:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:52:00]===
+2025-11-11 09:53:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:53:00]===
+2025-11-11 09:53:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:53:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:53:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:53:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:53:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:53:00.026 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:53:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:53:00.028 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:53:00.034  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 20ms
+2025-11-11 09:53:00.034  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:53:00.034  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:53:00.034  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:53:00]===
+2025-11-11 09:54:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:54:00]===
+2025-11-11 09:54:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:54:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:54:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:54:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:54:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:54:00.010 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:54:00.010 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:54:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:54:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 9ms
+2025-11-11 09:54:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:54:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:54:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:54:00]===
+2025-11-11 09:55:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:55:00]===
+2025-11-11 09:55:00.006  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:55:00.006  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:55:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:55:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:55:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:55:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:55:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:55:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:55:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 09:55:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:55:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:55:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:55:00]===
+2025-11-11 09:56:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:56:00]===
+2025-11-11 09:56:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:56:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:56:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:56:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:56:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:56:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:56:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:56:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:56:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 10ms
+2025-11-11 09:56:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:56:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:56:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:56:00]===
+2025-11-11 09:56:28.205  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-11-11 09:56:28.207  INFO 8824 --- [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:56:28.210  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:56:28.212  INFO 8824 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:56:28.213  INFO 8824 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:56:28.218  INFO 8824 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:56:28.322  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:56:28.322 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:56:28.322  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:56:28.899  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:56:28.908  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:56:29.105  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:56:29.106  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:56:29.106  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:56:29.138  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:56:29.138  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 814 ms
+2025-11-11 09:56:29.290  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:56:29.293  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:56:29.305  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:56:29.306  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:56:29.306  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:56:29.320  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f7d38da
+2025-11-11 09:56:29.320  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:56:29.321  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:56:29.321  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:56:29.342  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:56:29.342  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:56:29.746  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:56:29.795  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:56:30.502  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:56:30.510  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:56:30.554  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:56:30.566  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.282 seconds (process running for 891.828)
+2025-11-11 09:56:30.568  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:56:31.991  INFO 8824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-11-11 09:56:31.993  INFO 8824 --- [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-11 09:56:32.007  INFO 8824 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-11 09:56:32.011  INFO 8824 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:56:32.011  INFO 8824 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-11 09:56:32.024  INFO 8824 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-11 09:56:32.163  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 8824 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-11 09:56:32.163 DEBUG 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-11 09:56:32.163  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-11 09:56:32.952  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-11 09:56:32.962  INFO 8824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-11-11 09:56:33.385  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-11 09:56:33.386  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-11 09:56:33.386  INFO 8824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-11 09:56:33.415  INFO 8824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-11 09:56:33.416  INFO 8824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
+2025-11-11 09:56:33.614  INFO 8824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-11 09:56:33.620  INFO 8824 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-11 09:56:33.635  INFO 8824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-11 09:56:33.637  WARN 8824 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-11 09:56:33.637  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-11 09:56:33.652  INFO 8824 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@11ec4125
+2025-11-11 09:56:33.652  INFO 8824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-11 09:56:33.653  WARN 8824 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-11 09:56:33.654  INFO 8824 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-11 09:56:33.685  INFO 8824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-11 09:56:33.685  INFO 8824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-11 09:56:34.070  WARN 8824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-11 09:56:34.126  INFO 8824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-11 09:56:34.970  INFO 8824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-11 09:56:34.975  INFO 8824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-11 09:56:35.018  INFO 8824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-11 09:56:35.027  INFO 8824 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.924 seconds (process running for 896.289)
+2025-11-11 09:56:35.029  INFO 8824 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-11 09:57:00.003  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:57:00]===
+2025-11-11 09:57:00.003  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:57:00.003  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:57:00.005 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:57:00.005 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:57:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:57:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:57:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:57:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:57:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 09:57:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:57:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:57:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:57:00]===
+2025-11-11 09:58:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:58:00]===
+2025-11-11 09:58:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:58:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:58:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:58:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:58:00.020 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:58:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:58:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:58:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:58:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 9ms
+2025-11-11 09:58:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:58:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:58:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:58:00]===
+2025-11-11 09:59:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 09:59:00]===
+2025-11-11 09:59:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 09:59:00.005  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 09:59:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 09:59:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 09:59:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 09:59:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 09:59:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 09:59:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 09:59:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 09:59:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 09:59:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 09:59:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 09:59:00]===
+2025-11-11 10:00:00.013  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:00:00]===
+2025-11-11 10:00:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:00:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:00:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:00:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:00:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:00:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:00:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:00:00.024 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:00:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 13ms
+2025-11-11 10:00:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:00:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:00:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:00:00]===
+2025-11-11 10:01:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:01:00]===
+2025-11-11 10:01:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:01:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:01:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:01:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:01:00.009 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:01:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:01:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:01:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:01:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 10ms
+2025-11-11 10:01:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:01:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:01:00.018  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:01:00]===
+2025-11-11 10:02:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:02:00]===
+2025-11-11 10:02:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:02:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:02:00.020 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:02:00.020 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:02:00.021 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:02:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:02:00.027 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:02:00.028 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:02:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 10:02:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:02:00.030  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:02:00.031  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:02:00]===
+2025-11-11 10:03:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:03:00]===
+2025-11-11 10:03:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:03:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:03:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:03:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:03:00.019 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:03:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:03:00.024 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:03:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:03:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 13ms
+2025-11-11 10:03:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:03:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:03:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:03:00]===
+2025-11-11 10:04:00.011  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:04:00]===
+2025-11-11 10:04:00.011  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:04:00.012  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:04:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:04:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:04:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:04:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:04:00.023 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:04:00.025 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:04:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 15ms
+2025-11-11 10:04:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:04:00.027  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:04:00.028  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:04:00]===
+2025-11-11 10:05:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:05:00]===
+2025-11-11 10:05:00.008  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:05:00.008  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:05:00.009 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:05:00.009 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:05:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:05:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:05:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:05:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:05:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 10:05:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:05:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:05:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:05:00]===
+2025-11-11 10:06:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:06:00]===
+2025-11-11 10:06:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:06:00.014  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:06:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:06:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:06:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:06:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:06:00.022 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:06:00.024 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:06:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 10:06:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:06:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:06:00.026  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:06:00]===
+2025-11-11 10:07:00.003  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:07:00]===
+2025-11-11 10:07:00.004  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:07:00.004  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:07:00.005 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:07:00.006 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:07:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:07:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:07:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:07:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:07:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 10:07:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:07:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:07:00.015  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:07:00]===
+2025-11-11 10:08:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:08:00]===
+2025-11-11 10:08:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:08:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:08:00.007 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:08:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:08:00.009 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:08:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:08:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:08:00.015 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:08:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 12ms
+2025-11-11 10:08:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:08:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:08:00.019  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:08:00]===
+2025-11-11 10:09:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:09:00]===
+2025-11-11 10:09:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:09:00.007  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:09:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:09:00.008 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:09:00.009 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:09:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:09:00.012 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:09:00.014 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:09:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 9ms
+2025-11-11 10:09:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:09:00.016  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:09:00.017  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:09:00]===
+2025-11-11 10:10:00.008  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-11 10:10:00]===
+2025-11-11 10:10:00.009  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-11 10:10:00.009  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-11 10:10:00.010 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-11 10:10:00.011 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-11 10:10:00.013 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-11 10:10:00.016 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-11 10:10:00.017 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-11 10:10:00.018 DEBUG 8824 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-11 10:10:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 11ms
+2025-11-11 10:10:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-11 10:10:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-11 10:10:00.020  INFO 8824 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-11 10:10:00]===
