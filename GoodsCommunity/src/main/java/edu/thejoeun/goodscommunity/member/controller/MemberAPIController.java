@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,20 +27,15 @@ public class MemberAPIController {
 
     private final MemberServiceImpl memberService;
 
-
     // AI는 Model로 모든 것을 처리하려고 한다.
     // Model과 RedirectAttributes 구분해서 결과 값을 클라이언트에게 전달한다.
     @PostMapping("/login")
     public Map<String, Object> login(
     @RequestBody Map<String, String> loginData, HttpSession session) {
-
         String memberEmail = loginData.get("memberEmail");
         String memberPassword = loginData.get("memberPassword");
-
         Member member = memberService.login(memberEmail, memberPassword);
-
         Map<String, Object> res = memberService.loginProcess(memberEmail, memberPassword, session);
-
         return res;
     }
 
@@ -53,7 +47,6 @@ public class MemberAPIController {
     /**
      * 로그인 상태 확인 API
      * React 앱이 시작될 때 호출된다.
-     *
      * @param session
      * @return 로그인 상태를 반환한다.
      */

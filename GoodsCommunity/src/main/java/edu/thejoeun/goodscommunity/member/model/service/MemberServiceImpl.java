@@ -27,7 +27,6 @@ public class MemberServiceImpl  implements MemberService {
         if(member == null) {
             return null;
         }
-
         if(!bCryptPasswordEncoder.matches(memberPassword, member.getMemberPassword())) {
             return null;
         }
@@ -37,10 +36,8 @@ public class MemberServiceImpl  implements MemberService {
 
     public Map<String, Object> loginProcess(String memberEmail, String memberPassword, HttpSession session) {
         Map<String, Object> res = new HashMap<>();
-
         // 1. 로그인 검증
         Member m = login(memberEmail,memberPassword);
-
         // 2. 로그인 실패
         if(m == null) {
             res.put("success",false);
@@ -48,15 +45,12 @@ public class MemberServiceImpl  implements MemberService {
             log.warn("로그인 실패: {}", memberEmail);
             return  res;
         }
-
         // 3. 세션에 사용자 정보 저장
         SessionUtil.setLoginUser(session, m);
-
         // 4. 성공 응답 생성
         res.put("success",true);
         res.put("message","로그인 성공");
         res.put("user",m);
-
         log.info("로그인 성공 : {}",m.getMemberEmail());
         return res;
     }
@@ -71,7 +65,6 @@ public class MemberServiceImpl  implements MemberService {
         SessionUtil.invalidateLoginUser(session);
         res.put("success",true);
         res.put("message","로그아웃 성공");
-
         return res;
     }
 
@@ -83,7 +76,6 @@ public class MemberServiceImpl  implements MemberService {
     public Map<String, Object> checkLoginStatus(HttpSession session) {
         Map<String, Object> res = new HashMap<>();
         Member loginUser = (Member) session.getAttribute("loginUser");
-
         if(loginUser == null) {
             res.put("success",false);
             res.put("로그인 상태 확인 : {}", loginUser.getMemberEmail());
