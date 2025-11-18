@@ -15778,3 +15778,758 @@ Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving temp
 2025-11-18 17:10:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
 2025-11-18 17:10:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
 2025-11-18 17:10:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:10:00]===
+2025-11-18 17:10:55.670  INFO 2548 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2025-11-18 17:10:55.672  INFO 2548 --- [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-18 17:10:55.675  INFO 2548 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-18 17:10:55.678  INFO 2548 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:10:55.680  INFO 2548 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-18 17:10:55.683  INFO 2548 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
+2025-11-18 17:10:55.830  INFO 2548 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Starting GoodsCommunityApplication using Java 21.0.8 with PID 2548 (C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity\build\classes\java\main started by TJ in C:\Users\TJ\Desktop\박세원\springboot-workspace\GoodsCommunity)
+2025-11-18 17:10:55.830 DEBUG 2548 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-11-18 17:10:55.830  INFO 2548 --- [restartedMain] e.t.g.GoodsCommunityApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-18 17:10:56.743  INFO 2548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:10:56.753  INFO 2548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2025-11-18 17:10:57.037  INFO 2548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-11-18 17:10:57.039  INFO 2548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-18 17:10:57.039  INFO 2548 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-18 17:10:57.070  INFO 2548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-18 17:10:57.070  INFO 2548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1237 ms
+2025-11-18 17:10:57.282  INFO 2548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:10:57.288  INFO 2548 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-18 17:10:57.300  INFO 2548 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:10:57.302  WARN 2548 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : MyHikariCP - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-11-18 17:10:57.302  INFO 2548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Starting...
+2025-11-18 17:10:57.317  INFO 2548 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : MyHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@248971be
+2025-11-18 17:10:57.317  INFO 2548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Start completed.
+2025-11-18 17:10:57.319  WARN 2548 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-18 17:10:57.320  INFO 2548 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (MyHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:10:57.343  INFO 2548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:10:57.343  INFO 2548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:10:57.603  WARN 2548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-18 17:10:57.650  INFO 2548 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-18 17:10:58.354  INFO 2548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-18 17:10:58.363  INFO 2548 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-18 17:10:58.402  INFO 2548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-11-18 17:10:58.413  INFO 2548 --- [restartedMain] e.t.g.GoodsCommunityApplication          : Started GoodsCommunityApplication in 2.645 seconds (process running for 8984.809)
+2025-11-18 17:10:58.415  INFO 2548 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-18 17:11:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:11:00]===
+2025-11-18 17:11:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:11:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:11:00.018 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:11:00.018 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:11:00.019 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:11:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:11:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:11:00.027 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:11:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 14ms
+2025-11-18 17:11:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:11:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:11:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:11:00]===
+2025-11-18 17:11:12.950  INFO 2548 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18 17:11:12.950  INFO 2548 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-18 17:11:12.952  INFO 2548 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-11-18 17:11:12.955  INFO 2548 --- [http-nio-8085-exec-2] e.t.g.common.aop.LoggingAspect           : [MemberAPIController.checkLoginStatus()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:12.956  INFO 2548 --- [http-nio-8085-exec-2] e.t.g.common.aop.LoggingAspect           : ========== MemberServiceImpl.checkLoginStatus() 서비스 호출 ==========
+2025-11-18 17:11:12.956  INFO 2548 --- [http-nio-8085-exec-2] e.t.g.common.aop.LoggingAspect           : Parameter : [org.apache.catalina.session.StandardSessionFacade@41442856]
+2025-11-18 17:11:12.956  INFO 2548 --- [http-nio-8085-exec-2] e.t.g.common.aop.LoggingAspect           : [ExceptionController.allExceptionHandler()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:12.957  WARN 2548 --- [http-nio-8085-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "edu.thejoeun.goodscommunity.member.model.dto.Member.getMemberEmail()" because "loginUser" is null]
+2025-11-18 17:11:12.991 ERROR 2548 --- [http-nio-8085-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8085-exec-2] Exception processing template "": Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:12.992 ERROR 2548 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:12.994  INFO 2548 --- [http-nio-8085-exec-2] e.t.g.common.aop.LoggingAspect           : [ExceptionController.allExceptionHandler()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:12.995  WARN 2548 --- [http-nio-8085-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'text/html;charset=UTF-8']
+2025-11-18 17:11:12.995 ERROR 2548 --- [http-nio-8085-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8085-exec-2] Exception processing template "": Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:12.996 ERROR 2548 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:12.997 ERROR 2548 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 36 common frames omitted
+
+2025-11-18 17:11:13.006  INFO 2548 --- [http-nio-8085-exec-1] e.t.g.common.aop.LoggingAspect           : [MemberAPIController.checkLoginStatus()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:13.006  INFO 2548 --- [http-nio-8085-exec-1] e.t.g.common.aop.LoggingAspect           : ========== MemberServiceImpl.checkLoginStatus() 서비스 호출 ==========
+2025-11-18 17:11:13.006  INFO 2548 --- [http-nio-8085-exec-1] e.t.g.common.aop.LoggingAspect           : Parameter : [org.apache.catalina.session.StandardSessionFacade@41442856]
+2025-11-18 17:11:13.006  INFO 2548 --- [http-nio-8085-exec-1] e.t.g.common.aop.LoggingAspect           : [ExceptionController.allExceptionHandler()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:13.008  WARN 2548 --- [http-nio-8085-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "edu.thejoeun.goodscommunity.member.model.dto.Member.getMemberEmail()" because "loginUser" is null]
+2025-11-18 17:11:13.009 ERROR 2548 --- [http-nio-8085-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8085-exec-1] Exception processing template "": Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:13.010 ERROR 2548 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:13.011  INFO 2548 --- [http-nio-8085-exec-1] e.t.g.common.aop.LoggingAspect           : [ExceptionController.allExceptionHandler()] 요청 / ip : 0:0:0:0:0:0:0:1
+2025-11-18 17:11:13.011  WARN 2548 --- [http-nio-8085-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'text/html;charset=UTF-8']
+2025-11-18 17:11:13.012 ERROR 2548 --- [http-nio-8085-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8085-exec-1] Exception processing template "": Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:13.013 ERROR 2548 --- [http-nio-8085-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-11-18 17:11:13.015 ERROR 2548 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:396)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:209)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:286)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:150)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 36 common frames omitted
+
+2025-11-18 17:12:00.014  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:12:00]===
+2025-11-18 17:12:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:12:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:12:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:12:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:12:00.019 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:12:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:12:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:12:00.026 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:12:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 17ms
+2025-11-18 17:12:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:12:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:12:00.032  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:12:00]===
+2025-11-18 17:13:00.009  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:13:00]===
+2025-11-18 17:13:00.009  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:13:00.010  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:13:00.011 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:13:00.011 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:13:00.014 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:13:00.020 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:13:00.021 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:13:00.022 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:13:00.028  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 18ms
+2025-11-18 17:13:00.028  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:13:00.028  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:13:00.028  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:13:00]===
+2025-11-18 17:14:00.010  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:14:00]===
+2025-11-18 17:14:00.010  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:14:00.010  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:14:00.011 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:14:00.011 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:14:00.014 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:14:00.021 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:14:00.021 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:14:00.022 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:14:00.027  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 17ms
+2025-11-18 17:14:00.027  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:14:00.027  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:14:00.027  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:14:00]===
+2025-11-18 17:15:00.004  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:15:00]===
+2025-11-18 17:15:00.005  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:15:00.005  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:15:00.006 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:15:00.006 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:15:00.009 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:15:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:15:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:15:00.018 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:15:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 18ms
+2025-11-18 17:15:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:15:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:15:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:15:00]===
+2025-11-18 17:16:00.007  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:16:00]===
+2025-11-18 17:16:00.007  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:16:00.007  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:16:00.007 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:16:00.008 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:16:00.009 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:16:00.046 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:16:00.047 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:16:00.048 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:16:00.051  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 44ms
+2025-11-18 17:16:00.051  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:16:00.051  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:16:00.052  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:16:00]===
+2025-11-18 17:17:00.001  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:17:00]===
+2025-11-18 17:17:00.001  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:17:00.002  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:17:00.003 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:17:00.003 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:17:00.006 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:17:00.012 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:17:00.012 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:17:00.014 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:17:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 18ms
+2025-11-18 17:17:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:17:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:17:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:17:00]===
+2025-11-18 17:18:00.014  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:18:00]===
+2025-11-18 17:18:00.014  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:18:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:18:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:18:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:18:00.019 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:18:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:18:00.025 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:18:00.027 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:18:00.033  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 18ms
+2025-11-18 17:18:00.033  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:18:00.033  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:18:00.033  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:18:00]===
+2025-11-18 17:19:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:19:00]===
+2025-11-18 17:19:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:19:00.015  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:19:00.015 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:19:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:19:00.017 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:19:00.023 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:19:00.023 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:19:00.024 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:19:00.029  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 14ms
+2025-11-18 17:19:00.030  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:19:00.030  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:19:00.030  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:19:00]===
+2025-11-18 17:20:00.002  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:20:00]===
+2025-11-18 17:20:00.002  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:20:00.002  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:20:00.003 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:20:00.004 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:20:00.007 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:20:00.013 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:20:00.013 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:20:00.015 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:20:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 17ms
+2025-11-18 17:20:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:20:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:20:00.020  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:20:00]===
+2025-11-18 17:21:00.001  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:21:00]===
+2025-11-18 17:21:00.001  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:21:00.002  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:21:00.003 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:21:00.003 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:21:00.004 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:21:00.010 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:21:00.010 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:21:00.011 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:21:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 14ms
+2025-11-18 17:21:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:21:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:21:00.016  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:21:00]===
+2025-11-18 17:22:00.006  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 시작 [2025-11-18 17:22:00]===
+2025-11-18 17:22:00.006  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ========== SchedulingServiceImpl.updatePopularBoards() 서비스 호출 ==========
+2025-11-18 17:22:00.006  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Parameter : []
+2025-11-18 17:22:00.007 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==>  Preparing: DELETE FROM popular_board
+2025-11-18 17:22:00.007 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : ==> Parameters: 
+2025-11-18 17:22:00.009 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.deleteAllPopularBoards     : <==    Updates: 10
+2025-11-18 17:22:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==>  Preparing: INSERT INTO popular_board (board_id, ranking, updated_at) SELECT id, ROW_NUMBER() OVER(ORDER BY view_count DESC) as ranking, NOW() FROM board ORDER BY view_count DESC LIMIT 10
+2025-11-18 17:22:00.016 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : ==> Parameters: 
+2025-11-18 17:22:00.017 DEBUG 2548 --- [scheduling-1] e.t.g.c.s.s.S.insertPopularBoards        : <==    Updates: 10
+2025-11-18 17:22:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : Running Time : 17ms
+2025-11-18 17:22:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.aop.LoggingAspect           : ===================================================================================
+2025-11-18 17:22:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : 인기글 업데이트 완료 : 10
+2025-11-18 17:22:00.023  INFO 2548 --- [scheduling-1] e.t.g.common.scheduling.BoardScheduling  : ===인기글 업데이트 스케줄러 종료 [2025-11-18 17:22:00]===
+2025-11-18 17:22:56.625  INFO 2548 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-18 17:22:56.629  INFO 2548 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-18 17:22:56.631  INFO 2548 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:22:56.632  INFO 2548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown initiated...
+2025-11-18 17:22:56.637  INFO 2548 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHikariCP - Shutdown completed.
