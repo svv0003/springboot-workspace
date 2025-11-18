@@ -54,4 +54,17 @@ public class MemberAPIController {
     public Map<String, Object> checkLoginStatus(HttpSession session) {
         return memberService.checkLoginStatus(session);
     }
+
+    @PostMapping("/signup")
+    public void saveMember(@RequestBody Member member) {
+        log.info("===회원가입 요청===");
+        log.info("요청 데이터 - 이름 : {}, 이메일 : {}", member.getMemberName(), member.getMemberEmail());
+        try {
+            memberService.saveMember(member);
+            log.info("회원가입 성공 - 이메일 : {}", member.getMemberEmail());
+        } catch (Exception e) {
+            log.error("회원가입 실패 - 이메일 : {}, 에러 : {}", member.getMemberEmail(), e.getMessage());
+        }
+    }
+
 }

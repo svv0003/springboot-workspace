@@ -34,6 +34,16 @@ public class MemberServiceImpl  implements MemberService {
         return member;
     }
 
+    @Override
+    public void saveMember(Member member) {
+        // 비밀번호 암호화 로직
+        String originPW = member.getMemberPassword();
+        String encodedPW = bCryptPasswordEncoder.encode(originPW);
+        member.setMemberPassword(encodedPW);
+
+
+    }
+
     public Map<String, Object> loginProcess(String memberEmail, String memberPassword, HttpSession session) {
         Map<String, Object> res = new HashMap<>();
         // 1. 로그인 검증
